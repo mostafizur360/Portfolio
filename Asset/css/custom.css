@@ -1,0 +1,135 @@
+
+
+
+
+/*===========================rgb animation=================================*/
+.box {
+ 
+    border-radius: 20px;
+    background-color: #1b1930;
+    position: relative;
+  }
+  @property --angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0deg;
+  }
+  .box::after,
+  .box::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    --angle: 0deg;
+    background-image: conic-gradient(
+        from var(--angle), #ea2dd8, #00f195, #1be70086
+    );
+    animation: autoRotate 2s linear infinite;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    padding: 3px;
+    box-sizing: unset;
+  }
+  .box::after {
+    filter: blur(60px);
+  }
+  @keyframes autoRotate {
+    to {
+        --angle: 360deg;
+    }
+  }
+
+
+  /*===========================rgb animation END=================================*/
+
+
+
+  /*=========================== Auto slider START ===========================*/
+  .slider{
+  
+    height: var(--height);
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        #000 10% 90%,
+        transparent
+    );
+    
+}
+.slider .list{
+    display: flex;
+    width: 100%;
+    min-width: calc(var(--width) * var(--quantity));
+    position: relative;
+}
+.slider .list .item{
+    width: var(--width);
+    height: var(--height);
+    position: absolute;
+    left: 100%;
+    animation: autoRun 10s linear infinite;
+    transition: filter 0.5s;
+    animation-delay: calc( (10s / var(--quantity)) * (var(--position) - 1) - 10s)!important;
+}
+.slider .list .item img{
+    width: 100%;
+}
+@keyframes autoRun{
+    from{
+        left: 100%;
+    }to{
+        left: calc(var(--width) * -1);
+    }
+}
+/*=========================== Auto slider END ===========================*/
+
+
+ /*=========================== Auto slider START ===========================*/
+ .slider-1{
+  
+  height: var(--height);
+  overflow: hidden;
+  mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 10% 90%,
+      transparent
+  );
+margin: 0 auto;
+background-color: aliceblue;
+
+}
+.slider-1 .list-1{
+  display: flex;
+  width: 100%;
+  
+  
+  min-width: calc(var(--width) * var(--quantity));
+  position: relative;
+}
+.slider-1 .list-1 .item-1{
+  width: var(--width);
+  height: var(--height);
+  position: absolute;
+  left: 100%;
+  animation: autoRun 10s linear infinite;
+  transition: filter 0.5s;
+  animation-delay: calc( (10s / var(--quantity)) * (var(--position) - 1) - 10s)!important;
+}
+.slider-1 .list-1 .item-1 img{
+  width: 60%;
+  height: 100%;
+  padding: 10px;
+}
+@keyframes autoRun{
+  from{
+      left: 100%;
+  }to{
+      left: calc(var(--width) * -1);
+  }
+}
+/*=========================== Auto slider END ===========================*/

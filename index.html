@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD. Mostafizur Rahman</title>
+    <link rel="stylesheet" href="Asset/css/bootstrap 5.0.2/bootstrap.min.css">
+    <link rel="stylesheet" href="Asset/Login from/login.css">
+    <link rel="stylesheet" href="Asset/css/custom.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Asset/css/responsive.css">
+</head>
+
+<body>
+
+    <!-- <div id="preloader">
+
+    </div> -->
+
+
+    <!----==========================Navbar-START=========================-->
+        <nav class="navbar navbar-expand-lg navbar-mainbg fixed-top nav-1">
+            <div class="container-fluid">
+                <div class="navbar_logo">
+                    <img src="Asset/Img/logo/icon.jpg" alt="">
+                </div>
+                <a class="navbar-brand navbar-logo brand_name" href="index.html">MD. Mostafizur Rahman</a>
+                <button class="navbar-toggler mt-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="nav_icon"><ion-icon name="apps-outline"></ion-icon></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto text-center ">
+                        <div class="hori-selector">
+                            <div class="left"></div>
+                            <div class="right"></div>
+                        </div>
+                        <li class="nav-item" id="nav-home">
+                            <a class="nav-link" href="#home" data-url="#home" onclick="activateLink(this)"><i
+                                    class="bi bi-house-door"></i> Home</a>
+                        </li>
+                        <li class="nav-item" id="nav-about">
+                            <a class="nav-link" href="#about" data-url="#about" onclick="activateLink(this)"><i
+                                    class="bi bi-person"></i> About</a>
+                        </li>
+                        <li class="nav-item" id="nav-portfolio">
+                            <a class="nav-link" href="#portfolio" data-url="#Portfolio" onclick="activateLink(this)"><i
+                                    class="bi bi-briefcase"></i> Portfolio</a>
+                        </li>
+                        
+                        <li class="nav-item" id="nav-services">
+                            <a class="nav-link" href="#services" data-url="#Services" onclick="activateLink(this)"><i
+                                    class="bi bi-gear"></i> Services</a>
+                        </li>
+                        <li class="nav-item" id="nav-contact">
+                            <a class="nav-link" href="#contact" data-url="#Contact" onclick="activateLink(this)"><i
+                                    class="bi bi-envelope"></i> Contact</a>
+                        </li>
+                        <button id="openLightbox" class="login">Login</button>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+         <!-- Button to open lightbox -->
+    
+
+    <!-- Lightbox Container -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="close" id="closeLightbox">&times;</span>
+
+            <!-- Login Form (initially active) -->
+            <form id="loginForm" class="auth-form active">
+                <h2>Login</h2>
+                <label for="loginUsername">Username:</label>
+                <input type="text" id="loginUsername" name="username" required>
+
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="password" required>
+
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="#" id="showRegisterForm">Register Now</a></p>
+            </form>
+
+            <!-- Register Form (initially hidden) -->
+            <form id="registerForm" class="auth-form">
+                <h2>Register</h2>
+                <label for="registerUsername">Username:</label>
+                <input type="text" id="registerUsername" name="username" required>
+
+                <label for="registerEmail">Email:</label>
+                <input type="email" id="registerEmail" name="email" required>
+
+                <label for="registerPassword">Password:</label>
+                <input type="password" id="registerPassword" name="password" required>
+
+                <button type="submit">Register</button>
+                <p>Already have an account? <a href="#" id="showLoginForm">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+        <!---==========================Navbar-END========================-->
+
+
+
+
+            <!----=========================Home-START========================-->
+
+                <section id="home">
+                    <div id="particles-js">
+                        <span class="brand_title">
+                            <h2>Hello I<b class="custom_apostrophe">'</b>m</h2>
+                            <h1>Mostafizur Rahman</h1>
+                            <p>Web Designer | Front-End Developer</p>
+                            <button id="downloadButton">Download CV <i class="bi bi-arrow-down-circle"></i>
+                            </button>
+                        </span>
+                        <div class="social">
+                            <div class="social_icon">
+                                <a href="https://www.facebook.com/profile.php?id=100008635414913"><span class="glow-on-hover"><i class="bi bi-facebook"></i></span></a>
+                                <a href="https://www.instagram.com/mostafizur_rahman_masum_72/"><span class="glow-on-hover"><i class="bi bi-instagram"></i></span></i></a>
+                                <a href="https://github.com/Mostafizur072"><span class="glow-on-hover"><i class="bi bi-github"></i></span></a>
+                                <a href="https://www.linkedin.com/in/md-mostafizur-rahman-206a59324/"><span class="glow-on-hover"><i class="bi bi-linkedin"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </section>
+
+
+                <!----=========================Home-END========================-->
+
+
+
+                <!--========================== About START========================-->
+                        <section class="bg-dark" id="about">
+                            <div class="container ">
+                                <div class="row d-flex align-items-center justify-content-center about ">
+
+                                    <div
+                                        class="order-lg-2 order-2 order-sm-2 order-md-2 order-xl-2 order-xxl-2 col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 d-flex justify-content-center align-items-center about_img">
+                                        <div class="ambient_light_effet">
+                                            <div class="cube">
+                                                <div class="top">
+                                                    <h1>About</h1>
+                                                </div>
+                                                <div>
+                                                    <span style="--i:0">
+
+                                                        <video autoplay muted loop src="Asset/Video/1.mp4"></video>
+                                                    </span>
+                                                    <span style="--i:1">
+
+                                                        <video autoplay muted loop src="Asset/Video/2.mp4"></video>
+                                                    </span>
+                                                    <span style="--i:2">
+
+                                                        <video autoplay loop muted src="Asset/Video/3.mp4"></video>
+                                                    </span>
+                                                    <span style="--i:3">
+
+                                                        <video autoplay muted loop src="Asset/Video/4.mp4"></video>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div
+                                        class="order-lg-1 order-1 order-sm-1 order-md-1 order-xl-1 order-xxl-1 col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 about_title ">
+                                        <div class="d-flex justify-content-center align-items-center about_png_text">
+                                            <div class="about_png col-6">
+                                                <img src="Asset/Img/About/about.png" alt="">
+                                            </div>
+                                            <div class="about_text col-6">
+                                                <h1> MD.Mostafizur Rahman</h1>
+                                                <p>Web Designer | Front-End Developer</p>
+                                            </div>
+                                        </div>
+                                        <p class="about-me-text">I'm Md Mostafizur Rahman Masum, a Web Designer and Front-End Developer with a
+                                            passion for
+                                            creating user-friendly, visually appealing websites. With a background in
+                                            Computer Science, I
+                                            specialize in building responsive and modern web interfaces using tools like
+                                            HTML, CSS,
+                                            Bootstrap-5, JavaScript, JQuery and React. I'm dedicated to turning ideas
+                                            into beautiful,
+                                            functional websites.</p>
+                                        <ul class="about-me-detail">
+                                            <li>#javascript</li>
+                                            <li>#jQuery</li>
+                                            <li>#react.js</li>
+                                            <li>#html</li>
+                                            <li>#css</li>
+                                            <li>#bootstrap</li>
+                                            <li>#tailwind</li>
+                                            <li>#git</li>
+                                            <li>#github</li>
+                                            <li>#aws</li>
+                                            <li>#terminal</li>
+
+                                            <li>#figma</li>
+                                        </ul>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+ 
+                        <!--========================== About END========================-->
+
+
+ <!--========================== Portfolio START========================-->
+    <section id="Portfolio"> 
+        <div class="container">
+            <div class="row">
+                <div class="d-flex align-items-center justify-content-center mt-5 portfolio">
+                    <h1 class="portfolio-title box col-3">Portfolio</h1>
+                    <div class="slider col-8" style="
+                    --width: 100px;
+                    --height: 50px;
+                    --quantity: 10;
+                ">
+                    <div class="list">
+                        <div class="item" style="--position: 1"><img src="Asset/Img/Portfilio/slider1_1.png" alt=""></div>
+                        <div class="item" style="--position: 2"><img src="Asset/Img/Portfilio/slider1_2.png" alt=""></div>
+                        <div class="item" style="--position: 3"><img src="Asset/Img/Portfilio/slider1_3.png" alt=""></div>
+                        <div class="item" style="--position: 4"><img src="Asset/Img/Portfilio/slider1_4.png" alt=""></div>
+                        <div class="item" style="--position: 5"><img src="Asset/Img/Portfilio/slider1_5.png" alt=""></div>
+                        <div class="item" style="--position: 6"><img src="Asset/Img/Portfilio/slider1_6.png" alt=""></div>
+                        <div class="item" style="--position: 7"><img src="Asset/Img/Portfilio/slider1_7.png" alt=""></div>
+                        <div class="item" style="--position: 8"><img src="Asset/Img/Portfilio/slider1_8.png" alt=""></div>
+                        <div class="item" style="--position: 9"><img src="Asset/Img/Portfilio/slider1_9.png" alt=""></div>
+                        <div class="item" style="--position: 10"><img src="Asset/Img/Portfilio/slider1_10.png" alt=""></div>
+                    </div>
+                </div>
+                </div>
+                <div class="wrapper ">
+                    <div class="container_1">
+                        <input type="radio" name="slide" id="c1" checked>
+                        <label for="c1" class="card_1">
+                            <div class="row_1">
+                                <div  onclick="toggleTitleVisibility(this)" class="porject-title">
+                                    <h1>Nova</h1>
+                                </div>
+                               
+                                <div class="description">
+                                    <h4><button><a href="">Visit</a></button></h4>
+                                    <p>Design by HTML,CSS,Bootstrap-5</p>
+                                </div>
+                            </div>
+                        </label>
+                        <input type="radio" name="slide" id="c2" >
+                        <label for="c2" class="card_1">
+                            <div class="row_1">
+                                <div  onclick="toggleTitleVisibility(this)" class="porject-title">
+                                    <h1>AvienTech</h1>
+                                </div>
+                                
+                                
+                               
+                                <div class="description">
+                                    <h4><button><a href="">Visit</a></button></h4>
+                                    <p>Design by HTML,CSS,Bootstrap-5</p>
+                                </div>
+                            </div>
+                        </label>
+                        <input type="radio" name="slide" id="c3" >
+                        <label for="c3" class="card_1">  
+                            <div class="row_1">
+                                <div  onclick="toggleTitleVisibility(this)" class="porject-title">
+                                    <h1>Rich Art</h1>
+                                </div>
+                                
+                                <div class="description">
+                                    <h4><button><a href="">Visit</a></button></h4>
+                                    <p>Design by HTML,CSS,Bootstrap-5</p>
+                                </div>
+                            </div>
+                        </label>
+                        <input type="radio" name="slide" id="c4" >
+                        <label for="c4" class="card_1">
+                            <div class="row_1">
+                                <div  onclick="toggleTitleVisibility(this)" class="porject-title">
+                                    <h1>Nova</h1>
+                                </div>
+                              
+                                <div class="description">
+                                    <h4><button><a href="">Visit</a></button></h4>
+                                    <p>Design by HTML,CSS,Bootstrap-5</p>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=====================portfolio section end===========================-->
+
+
+
+
+    <!--=====================Services section start===========================-->
+
+    <section id="Services">
+        <div class="container">
+            <div class="row">
+              <div class=" mt-5">
+                <h1 class="services-title">Services</h1>
+                <div class="slider-1 col-8" style="
+                     --width: 100px;
+                     --height: 50px;
+                     --quantity: 9;
+                    
+                 ">
+                     <div class="list-1">
+                        
+                         <div class="item-1" style="--position:1"><img src="Asset/Img/services/html.svg" alt=""></div>
+                         <div class="item-1" style="--position: 2"><img src="Asset/Img/services/css.svg" alt=""></div>
+                         <div class="item-1" style="--position: 3"><img src="Asset/Img/services/bootstrap.svg" alt=""></div>
+                         <div class="item-1" style="--position: 4"><img src="Asset/Img/services/js.svg" alt=""></div>
+                         <div class="item-1" style="--position: 5"><img src="Asset/Img/services/tailwind.svg" alt=""></div>
+                         <div class="item-1" style="--position: 6"><img src="Asset/Img/services/word.png" alt=""></div>
+                         <div class="item-1" style="--position: 7"><img src="Asset/Img/services/excel.png" alt=""></div>
+                         <div class="item-1" style="--position: 8"><img src="Asset/Img/services/photoshop.png" alt=""></div>
+                         <div class="item-1" style="--position: 9"><img src="Asset/Img/services/advertising.png" alt=""></div>
+                     </div>
+                 </div>
+                 <div class="Services-item">
+                    <div class="card">
+                        <div style="padding: 20px;text-align: center;font-size:12px;">
+                            <h1>HTML</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                            <button class="sh_btn">Read more</button>
+                            <p class="description" style="display:none;">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nostrum reiciendis molestias perspiciatis corrupti, expedita commodi quod nihil tenetur ex nulla cum, omnis odio minus, sit iure nam. Suscipit, libero.
+                            </p>
+                        </div>
+                         <div class="cover">
+                            <div class="coverFront">
+                               <div>
+                                  <h5>HTML</h5>
+                                  <img src="Asset/Img/services/html.svg" alt="" class="sh_img ">
+                               </div>
+                            </div>
+                            <div class="coverBack"></div>
+                         </div>
+                      </div>
+                   
+                      <div class="card">
+                         <div style="padding: 20px;text-align: center;font-size:12px;">
+                            <h1>CSS</h1>
+                            <p>
+                               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices in iaculis nunc sed augue.
+                            </p>
+                            <button class="sh_btn">Read more</button>
+                         </div>
+                         <div class="cover">
+                            <div class="coverFront">
+                               <div>
+                                  <h5>CSS</h5>
+                                  <img src="Asset/Img/services/css.svg" alt="" class="sh_img">
+                               </div>
+                            </div>
+                            <div class="coverBack"></div>
+                         </div>
+                      </div>
+                   
+                      <div class="card">
+                         <div style="padding: 20px;text-align: center;font-size:12px;">
+                            <h1>BOOTSTRAP</h1>
+                            <p>
+                               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices in iaculis nunc sed augue.
+                            </p>
+                            <button class="sh_btn">Read more</button>
+                         </div>
+                         <div class="cover">
+                            <div class="coverFront">
+                               <div>
+                                  <h5>BOOTSTRAP</h5>
+                                  <img src="Asset/Img/services/bootstrap.svg  " alt="" class="sh_img">
+                               </div>
+                            </div>
+                            <div class="coverBack"></div>
+                         </div>
+                      </div>
+                      <div class="card">
+                        <div style="padding: 20px;text-align: center;font-size:12px;">
+                           <h1>JS</h1>
+                           <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices in iaculis nunc sed augue.
+                           </p>
+                           <button class="sh_btn">Read more</button>
+                        </div>
+                        <div class="cover">
+                           <div class="coverFront">
+                              <div>
+                                 <h5>JS</h5>
+                                 <img src="Asset/Img/services/js.svg" alt="" class="sh_img">
+                              </div>
+                           </div>
+                           <div class="coverBack"></div>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <div style="padding: 20px;text-align: center;font-size:12px;">
+                           <h1>Security</h1>
+                           <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices in iaculis nunc sed augue.
+                           </p>
+                           <button class="sh_btn">Read more</button>
+                        </div>
+                        <div class="cover">
+                           <div class="coverFront">
+                              <div>
+                                 <h5>Security</h5>
+                                 <img src="img3.svg" alt="" class="sh_img">
+                              </div>
+                           </div>
+                           <div class="coverBack"></div>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <div style="padding: 20px;text-align: center;font-size:12px;">
+                           <h1>Security</h1>
+                           <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices in iaculis nunc sed augue.
+                           </p>
+                           <button class="sh_btn">Read more</button>
+                        </div>
+                        <div class="cover">
+                           <div class="coverFront">
+                              <div>
+                                 <h5>Security</h5>
+                                 <img src="img3.svg" alt="" class="sh_img">
+                              </div>
+                           </div>
+                           <div class="coverBack"></div>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <div style="padding: 20px;text-align: center;font-size:12px;">
+                           <h1>Security</h1>
+                           <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices in iaculis nunc sed augue.
+                           </p>
+                           <button class="sh_btn">Read more</button>
+                        </div>
+                        <div class="cover">
+                           <div class="coverFront">
+                              <div>
+                                 <h5>Security</h5>
+                                 <img src="img3.svg" alt="" class="sh_img">
+                              </div>
+                           </div>
+                           <div class="coverBack"></div>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <div style="padding: 20px;text-align: center;font-size:12px;">
+                           <h1>Security</h1>
+                           <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices in iaculis nunc sed augue.
+                           </p>
+                           <button class="sh_btn">Read more</button>
+                        </div>
+                        <div class="cover">
+                           <div class="coverFront">
+                              <div>
+                                 <h5>Security</h5>
+                                 <img src="img3.svg" alt="" class="sh_img">
+                              </div>
+                           </div>
+                           <div class="coverBack"></div>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <div style="padding: 20px;text-align: center;font-size:12px;">
+                           <h1>Marketing</h1>
+                           <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices in iaculis nunc sed augue.
+                           </p>
+                           <button class="sh_btn">Read more</button>
+                        </div>
+                        <div class="cover">
+                           <div class="coverFront">
+                              <div>
+                                 <h5>Marketing</h5>
+                                 <img src="Asset/Img/services/advertising.png" alt="" class="sh_img">
+                              </div>
+                           </div>
+                           <div class="coverBack"></div>
+                        </div>
+                     </div>
+                 </div>
+              </div>
+                
+            </div>
+        </div>
+    </section>
+
+<!-- Modal -->
+<div id="myModal" class="modal" style="display:none;">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="modal-description"></p>
+    </div>
+</div>
+
+    <!--=====================Services section end===========================-->
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ullam obcaecati porro
+                            natus illum neque aut vel officia facilis sunt, ipsum at? Mollitia officia iure repellat
+                            laudantium architecto nulla deleniti hic in ab, magni rerum consectetur eveniet ducimus
+                            animi porro et velit cumque exercitationem quibusdam deserunt atque, repudiandae cum.
+                            Sapiente necessitatibus quaerat inventore iusto consequuntur doloremque rerum, nobis quidem
+                            iste nostrum quisquam neque perspiciatis a possimus facilis commodi mollitia sed. Asperiores
+                            similique quis sequi harum doloremque porro voluptatibus repellat in a, facere delectus
+                            commodi aperiam perspiciatis pariatur dicta dolor temporibus odio provident quisquam iure.
+                            Laudantium ex ratione maiores, molestias numquam voluptate optio ipsum ut quod cum odit
+                            vitae ea rerum facere est cumque ullam praesentium voluptatibus veritatis nobis! Neque iusto
+                            sed culpa eos optio deserunt saepe quo atque cumque! Obcaecati totam beatae aliquam
+                            molestias iure mollitia voluptatibus voluptates nihil ab similique? Pariatur sapiente odit
+                            minima quaerat eius vero, incidunt mollitia tempora est quae enim dignissimos et porro quia
+                            quasi nemo necessitatibus quam facilis similique doloremque consequuntur deleniti cupiditate
+                            maxime totam. Architecto similique quisquam distinctio sit ad esse, natus aliquid odio
+                            asperiores nisi possimus optio, veniam beatae cum rerum voluptatum. Laboriosam aliquam nihil
+                            ipsum reiciendis, repellendus illo dicta odio iste in nemo beatae praesentium, eum sed
+                            distinctio quas, fuga suscipit. Porro temporibus perspiciatis, ad ex est dignissimos ipsa
+                            quod itaque rerum facere hic nesciunt similique neque consequatur aperiam, tempora totam,
+                            unde voluptatem doloribus quas praesentium repudiandae qui. Numquam quia beatae rerum magni
+                            dicta tempora? Adipisci laudantium ipsam, modi dolorem nostrum corporis distinctio qui
+                            similique sed voluptatibus incidunt id repellendus doloremque ipsa perspiciatis veniam
+                            blanditiis sint itaque deleniti alias. Eaque, repudiandae. Eos id quidem, dolor quo fuga
+                            soluta similique ducimus facilis ea ullam molestias animi amet aspernatur dolore autem,
+                            libero culpa distinctio? Molestiae, quam. Sed assumenda ut facere magni voluptatem nihil
+                            mollitia distinctio laborum amet maiores. Eius nulla sequi possimus molestias obcaecati
+                            suscipit maxime delectus earum aut, aspernatur consectetur facere. Sed quis architecto
+                            perspiciatis excepturi? Nemo qui, ducimus non voluptatum harum numquam id alias, quia illo
+                            magnam beatae eveniet nesciunt enim laborum! Mollitia eius molestiae natus cupiditate
+                            officia? Nostrum quod fugiat exercitationem, distinctio vitae ab similique perspiciatis
+                            ipsum iusto explicabo vero hic dolorem corrupti odit illo praesentium aspernatur odio
+                            incidunt officiis aperiam facere accusamus dolor! Cumque odit obcaecati eligendi? Totam
+                            commodi iusto eos doloremque aliquid ipsum iste eaque esse veritatis ab sapiente accusamus
+                            nulla reprehenderit repellat nam, sequi eligendi perferendis mollitia repudiandae placeat
+                            quod corrupti dolorum molestiae cupiditate. Corrupti, commodi minima totam similique ea
+                            minus tenetur esse sit vitae sequi, obcaecati saepe, expedita necessitatibus dolores
+                            corporis cupiditate animi? Deserunt labore accusamus fugiat eius animi, cupiditate
+                            perspiciatis dolores adipisci maiores voluptatem, pariatur possimus expedita consequatur
+                            porro consequuntur sapiente dignissimos ea. Magnam dolorum consectetur eaque doloremque
+                            dolorem? Sed consequuntur placeat ut dolor nemo aperiam aut quo aliquam sequi, repellat
+                            laboriosam veniam, culpa sunt mollitia nesciunt ad! Quia, quod alias neque sit minus,
+                            repudiandae, in asperiores consectetur quam corporis consequuntur impedit non commodi magnam
+                            dolores qui id blanditiis necessitatibus hic quos voluptate facilis doloremque eos? Unde,
+                            vero quibusdam hic illum cum reiciendis dolore totam incidunt rem sint explicabo, officia
+                            mollitia! Vel expedita distinctio sequi animi dolorem in, nesciunt amet nam rerum maxime
+                            perferendis voluptate reprehenderit veniam error iste atque. Asperiores maxime praesentium
+                            consectetur iusto, magni iure! Ad porro voluptate maiores fuga adipisci reprehenderit veniam
+                            facilis quis atque explicabo rerum obcaecati modi soluta maxime, suscipit quos error at nisi
+                            ducimus velit culpa laudantium a beatae distinctio! Minima quo hic tenetur! Earum libero
+                            voluptatem molestiae? Quisquam rem itaque, quibusdam nemo temporibus, natus dolorum quos quo
+                            molestiae suscipit modi amet quod laborum incidunt ipsam facere dolore perferendis
+                            dignissimos magnam accusamus non vero dolores? Commodi architecto itaque ipsa facilis,
+                            consectetur libero quisquam dicta voluptatibus esse repudiandae animi minus cum assumenda
+                            quidem. Magnam animi odio fugit placeat quaerat quam, sint id deleniti natus sapiente beatae
+                            asperiores quo quidem rem reiciendis numquam. Est voluptate exercitationem soluta aliquid
+                            corrupti voluptatum fugiat unde neque, tempore placeat nulla id perspiciatis ipsum culpa
+                  
+
+
+
+
+
+
+
+
+
+
+                            <!-- jQuery -->
+                            <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+                            <!-- Bootstrap JS -->
+                            <script src="Asset/Login from/login.js"></script>
+                            <script type="module"
+                                src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+                            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+                            <script src="Asset/js/particles.js"></script>
+                            <script src="Asset/js/app.js"></script>
+                            <script src="Asset/js/bootstrap 5.0.2/bootstrap.bundle.min.js"></script>
+                            <script src="Asset/js/preloader.js"></script>
+                            <script src="Asset/js/nav.js"></script>
+                            <script src="Asset/js/main.js"></script>
+
+</body>
+
+</html>

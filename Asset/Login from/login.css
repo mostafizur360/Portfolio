@@ -1,0 +1,106 @@
+/* Lightbox background */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000000;
+}
+/* Lightbox content */
+.lightbox-content {
+    background: rgba(0, 0, 0, 0.17);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.8px);
+    -webkit-backdrop-filter: blur(7.8px);
+    padding: 50px;
+    border-radius: 8px;
+  color: #ffffff;
+    position: relative;
+    width: 500px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    &:hover {
+        rotate: 90deg;
+        transition: all 0.3s ease-in-out;
+    }
+} 
+
+
+/* Form styling */
+.auth-form h2{
+    text-align: center;
+}
+.auth-form p{
+    text-align: center;
+}
+.auth-form {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/* Active form is visible */
+.auth-form.active {
+    display: block;
+    opacity: 1;
+}
+
+/* Input fields */
+.auth-form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.auth-form label{
+text-align: right!important;
+}
+
+/* Button styles */
+.auth-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #04AA6D;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.auth-form button:hover {
+    background-color: #048052;
+}
+
+.auth-form p {
+    margin-top: 10px;
+}
+
+.auth-form a {
+    color: #04AA6D;
+    cursor: pointer;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .lightbox-content {
+        width: 90%;
+    }
+}
+
